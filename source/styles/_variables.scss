@@ -1,0 +1,53 @@
+// ---------- COLOURS
+
+$color-1: #6A887E;
+$color-2: #78A596;
+$color-3: #69BBA0;
+$color-4: #57CAA4;
+$color-5: #49DFAE;
+$color-6: #66B5A6;
+$color-7: #59CF93;
+$color-8: #4AE0A7;
+$color-9: #55C5AF;
+$color-10: #49DDC0;
+$color-11: #4CE680;
+$color-12: #5BD484;
+
+
+// ---------- FONTS
+$body-fonts: Arial, sans-serif;
+
+
+// ---------- PATHS
+$imgPath: '../images/';
+
+// ---------- MEDIA QUERY
+
+$height-xx-small: em(320); //LG Optimus One & iPhone 3/4/5 horizontal
+$height-x-small: em(375); //iPhone 6 horizontal
+$height-small: em(414); //iPhone 6 Plus horizontal
+$height-small-medium: em(480); //iPhone 3/4
+$height-medium: em(568); //iPhone 5
+$height-medium-large: em(667); //iPhone 6 and up
+$height-large: em(736); //iPhone 6 Plus and up
+$height-percentage-breakpoint: em(800); //iPhone 6 and up
+
+// declare breakpoints
+$usn-x-small         : 320px;
+$usn-small           : 360px;
+$usn-small-medium    : 540px;
+$usn-medium          : 768px;
+$usn-large-medium    : 960px;
+$usn-large           : 1200px;
+$usn-x-large         : 1400px;
+$usn-xx-large        : 1600px;
+$usn-xxx-large       : 1800px;
+$usn-huge            : 2000px;
+
+// ---------- SUSY GLOBAL SETTINGS
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/4, // The size of a gutter in relation to a single column
+  gutter-position: inside,
+);

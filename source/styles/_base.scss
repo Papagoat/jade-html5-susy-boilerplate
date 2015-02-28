@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+}
+
+// -------------------------------------------------- utility/layout
+section {
+  @include container(60em);
+  // Max width 960px;
+  text-align: center;
+}
+
+// -------------------------------------------------- susy layouts
+
+section {
+  font-family: $body-fonts;
+  font-size: em(18);
+  .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth, .eleventh, .twelveth {
+    padding: em(40);
+  }
+  .first {
+    background: $color-1;
+  }
+  .second {
+    background: $color-2;
+  }
+  .third {
+    background: $color-3;
+  }
+  .fourth {
+    background: $color-4;
+  }
+  .fifth {
+    background: $color-5;
+  }
+  .sixth {
+    background: $color-6;
+  }
+  .seventh {
+    background: $color-7;
+  }
+  .eighth {
+    background: $color-8;
+  }
+  .ninth {
+    background: $color-9;
+  }
+  .tenth {
+    background: $color-10;
+  }
+  .eleventh {
+    background: $color-11;
+  }
+  .twelveth {
+    background: $color-12;
+  }
+  // 2 Columns
+  &.twocol {
+    .first, .second {
+      @include span(12 of 12);
+    }
+  }
+  // 3 Columns
+  &.threecol {
+    .first, .second, .third {
+      @include span(12 of 12);
+    }
+  }
+  // 4 Columns
+  &.fourcol {
+    .first, .second, .third, .fourth {
+      @include span(12 of 12);
+    }
+  }
+  // 5 Columns
+  &.fivecol {
+    .first, .second, .third, .fourth, .fifth {
+      @include span(12 of 12);
+    }
+  }
+  // 6 Columns
+  &.sixcol {
+    .first, .second, .third, .fourth, .fifth, .sixth {
+      @include span(12 of 12);
+    }
+  }
+  // 12 Columns
+  &.twelvecol {
+    .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth, .eleventh, .twelveth {
+      @include span(12 of 12);
+    }
+  }
+}
+
+// -------------------------------------------------- Medium Breakpoints
+
+@media only screen and (min-width: $usn-small-medium) {
+  section {
+    // 2 Columns
+    &.twocol {
+      .first, .second {
+        @include span(6 of 12);
+      }
+    }
+    // 3 Columns
+    &.threecol {
+      .first, .second, .third {
+        @include span(4 of 12);
+      }
+    }
+    // 4 Columns
+    &.fourcol {
+      .first, .second, .third, .fourth {
+        @include span(3 of 12);
+      }
+    }
+    // 5 Columns
+    &.fivecol {
+      .first, .second, .third, .fourth, .fifth {
+        @include span(20%);
+      }
+    }
+    // 6 Columns
+    &.sixcol {
+      .first, .second, .third, .fourth, .fifth, .sixth {
+        @include span(2 of 12);
+      }
+    }
+    // 12 Columns
+    &.twelvecol {
+      .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth, .eleventh, .twelveth {
+        @include span(1 of 12);
+      }
+    }
+  }
+}

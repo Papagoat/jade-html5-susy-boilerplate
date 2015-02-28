@@ -1,0 +1,27 @@
+-var dev = true
+-var title = "Title Here"
+
+if dev
+  
+  -var stylePath = 'styles/'
+  -var imgPath = 'images/'
+  -var scriptsPath = 'scripts/'  
+  -var styleSheet = 'styles.css'
+
+else
+  
+  -var stylePath = 'styles/'
+  -var imgPath = 'images/'
+  -var scriptsPath = 'scripts/'  
+  -var styleSheet = 'styles.css'
+
+
+
+meta(charset='utf-8')
+meta(name='viewport', content='width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1')
+title #{title}
+link(rel='stylesheet', href='#{stylePath}#{styleSheet}')
+
+| <!--[if IE 8]>
+| <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+| <![endif]-->

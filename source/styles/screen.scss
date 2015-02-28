@@ -1,0 +1,23 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// if normalize is updated, the CSS file must be manually copied and changed to _normalize.scss
+@import 'lib/_normalize';
+
+@import 'lib/bourbon/app/assets/stylesheets/_bourbon.scss';
+
+@import '_variables';
+
+@import 'bower_components/susy/sass/_susy';
+
+@import '_mixins';
+
+@import '_images';
+
+@import '_base';
+
+@import '_typography';
+
+@import '_browser_fixes';
