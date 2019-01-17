@@ -1,5 +1,7 @@
 # jade-html5-susy-boilerplate
 
+# This repository is no longer maintained.
+
 This is a jade HTML5 Boilerplate template with Susy Grids
 
 CD into your directory via terminal and launch the server using grunt serve.
